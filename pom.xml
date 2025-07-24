@@ -25,6 +25,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+	<properties>
+                <sonar.host.url>http://13.233.107.253:9000</sonar.host.url>
+                 <sonar.login>sqa_8d9f13535b65516986190c0c0167b4526e1f30eb</sonar.login> 
+        </properties>
+
 	</properties>
 
 	<dependencies>
@@ -102,6 +107,15 @@
 	
 	<build>
 		<finalName>maven-web-application</finalName>
+	<build>
+           <plugins>
+             <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>4.0.0.4121</version>
+             </plugin>
+          </plugins>
+      </build>
 		
 		<plugins>
 			<plugin>
