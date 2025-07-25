@@ -89,18 +89,14 @@
 	<distributionManagement>
 	
 	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.42.154:9980/mithuntechnologies/repository/canarabank-snapshot/</url>
-	    </repository>
-	    
+        <id>nexus</id> <!-- This must match settings.xml <server><id> -->
+        <url>http://13.234.202.138:8081/repository/maven-releases/</url>
+        </repository> 
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.42.154:9980/mithuntechnologies/repository/canarabank-release/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
+             <url>http://13.234.202.138:8081/repository/maven-snapshots/</url>
+               </snapshotRepository>
+               </distributionManagement>
 	
 	<build>
 		<finalName>maven-web-application</finalName>
