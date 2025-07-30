@@ -87,11 +87,11 @@
   <distributionManagement>
     <repository>
       <id>nexus-releases</id> <!-- Must match <server><id> in settings.xml -->
-      <url>http://43.204.30.236:8081/repository/maven-releases/</url>
+      <url>http://65.1.136.174:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <id>nexus-snapshots</id> <!-- Must match <server><id> in settings.xml -->
-      <url>http://43.204.30.236:8081/repository/maven-snapshots/</url>
+      <url>http://65.1.136.174:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
